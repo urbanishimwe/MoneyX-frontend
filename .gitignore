@@ -31,6 +31,7 @@ bower_components
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
+build
 
 # Dependency directories
 node_modules/
@@ -54,8 +55,15 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 .env
+.eslintcache
+.vscode
 
 # next.js build output
 .next

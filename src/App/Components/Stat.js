@@ -32,12 +32,15 @@ class Stat extends Component {
 	render() {
 		return (
 			<div className='panel-container bg-white'>
-				<SafeAnchor href='/' className='p-3 bg-light font-weight-bold text-decoration-none'>
+				<SafeAnchor
+					href='/'
+					className='p-3 bg-light font-weight-bold text-decoration-none display-block'
+				>
 					Home
 				</SafeAnchor>
 				<SafeAnchor
 					href='/convert'
-					className='p-3 bg-light font-weight-bold text-decoration-none ml-3'
+					className='p-3 bg-light font-weight-bold text-decoration-none button-left display-block'
 				>
 					Convert
 				</SafeAnchor>

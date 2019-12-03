@@ -1,8 +1,8 @@
 import Action from '../Actions';
 
 const initialState = {
-	from: '1USD',
-	to: '1USD',
+	from: 0,
+	to: 0,
 	convertError: false,
 	convertErrorCSS: 'alert-info',
 };

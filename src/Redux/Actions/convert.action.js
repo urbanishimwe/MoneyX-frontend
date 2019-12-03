@@ -6,7 +6,9 @@ export function postCurrencies(data) {
 		try {
 			const res = await request('post', data);
 			if (res.status === 201) {
-				dispatch({ type: Actions.GET_CONVERSION, payload: res.data.data });
+				const from = parseFloat(res.data.data.from);
+				const to = parseFloat(res.data.data.to);
+				dispatch({ type: Actions.GET_CONVERSION, payload: { from, to } });
 			} else throw new Error(res.data);
 		} catch (error) {
 			dispatch({ type: Actions.GET_CONVERSION_ERROR, payload: {} });

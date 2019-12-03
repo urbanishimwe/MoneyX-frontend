@@ -25,6 +25,7 @@
   },
   "scripts": {
     "test": "jest",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "test:watch": "NODE_ENV=test && jest --watchAll",
     "start": "serve -s ./build",
     "build": "webpack --mode production",
@@ -62,6 +63,7 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
+    "coveralls": "^3.0.9",
     "css-loader": "^3.2.0",
     "dotenv-webpack": "^1.7.0",
     "eslint": "^6.7.1",
